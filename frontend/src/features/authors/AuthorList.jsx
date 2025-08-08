@@ -8,6 +8,14 @@ const AuthorList = () => {
     getAuthors().then(setAuthors);
   }, []);
 
+  //useEffect(() => {
+  //  const fetchAuthors = async () => {
+  //    const data = await getAuthors();
+  //    setAuthors(data);
+  //  };
+  //  fetchAuthors();
+  //}, []);
+
   return (
     <ul>
       {authors.map((a) => (
